@@ -20,7 +20,7 @@ class CocaCola extends Bebida {
         return "cocacola";
     }
 }
-class Sprite extends Bebida {
+class Sprite extends Bebida  {
     public Sprite(int s) {
         super(s);
     }

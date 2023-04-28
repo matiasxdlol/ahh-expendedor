@@ -1,3 +1,4 @@
+
 class Expendedor {
     private Deposito coca;
     private Deposito sprite;
@@ -26,21 +27,18 @@ class Expendedor {
                 Bebida b = coca.getBebida();
                 if (b != null) {
                     for (int i = 0; i < (m.getValor() - precio) / 100; i++) {
-
-                        Moneda a = new Moneda.Moneda100();
+                        Moneda100 a = new Moneda100();
                         monVu.addMoneda(a);
                     }
-
                     return b;
                 }
+
             } else if (n == 2) {
 
                 Bebida b = sprite.getBebida();
-
                 if (b != null) {
                     for (int i = 0; i < (m.getValor() - precio) / 100; i++) {
-
-                        Moneda a = new Moneda.Moneda100();
+                        Moneda100 a = new Moneda100();
                         monVu.addMoneda(a);
                     }
                     return b;
@@ -65,4 +63,5 @@ class Expendedor {
     public Moneda getVuelto() {
         return monVu.getMoneda();
     }
+
 }
