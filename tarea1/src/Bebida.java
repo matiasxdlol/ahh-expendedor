@@ -11,3 +11,22 @@ abstract class Bebida {
 
     public abstract String beber();
 }
+class CocaCola extends Bebida {
+    public CocaCola(int s) {
+        super(s);
+    }
+
+    public String beber() {
+        return "cocacola";
+    }
+}
+class Sprite extends Bebida {
+    public Sprite(int s) {
+        super(s);
+    }
+
+    public String beber() {
+        return "sprite";
+    }
+}
+

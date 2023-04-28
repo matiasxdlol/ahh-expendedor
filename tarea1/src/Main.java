@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         Expendedor exp = new Expendedor(5,300);
