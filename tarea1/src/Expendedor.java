@@ -27,7 +27,7 @@ class Expendedor {
                 if (b != null) {
                     for (int i = 0; i < (m.getValor() - precio) / 100; i++) {
 
-                        Moneda a = new Moneda100();
+                        Moneda a = new Moneda.Moneda100();
                         monVu.addMoneda(a);
                     }
 
@@ -40,7 +40,7 @@ class Expendedor {
                 if (b != null) {
                     for (int i = 0; i < (m.getValor() - precio) / 100; i++) {
 
-                        Moneda a = new Moneda100();
+                        Moneda a = new Moneda.Moneda100();
                         monVu.addMoneda(a);
                     }
                     return b;

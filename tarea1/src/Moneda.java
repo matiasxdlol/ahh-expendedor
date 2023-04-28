@@ -7,4 +7,44 @@ abstract class Moneda {
     }
 
     public abstract int getValor();
+
+    static class Moneda100 extends Moneda {
+        public Moneda100() {
+            super();
+        }
+
+        public int getValor() {
+            return 100;
+        }
+    }
+
+    static class Moneda500 extends Moneda {
+        public Moneda500() {
+            super();
+        }
+
+        public int getValor() {
+            return 500;
+        }
+    }
+
+    static class Moneda1000 extends Moneda {
+        public Moneda1000() {
+            super();
+        }
+
+        public int getValor() {
+            return 1000;
+        }
+    }
+
+    static class Moneda1500 extends Moneda {
+        public Moneda1500() {
+            super();
+        }
+
+        public int getValor() {
+            return 1500;
+        }
+    }
 }
