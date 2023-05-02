@@ -1,7 +1,23 @@
+/**
+ * clase
+ */
 class Comprador {
+
     private String sabor;
+
     private int exp;
+
     private int vuelto;
+
+    /** exepción
+     *
+     *
+     * @param m
+     * @param cualBebida
+     * @param exp
+     * @throws PagoInsuficienteException
+     * @throws NoHayProductoExcption
+     */
 
     public Comprador(Moneda m, int cualBebida, Expendedor exp) throws PagoInsuficienteException, NoHayProductoExcption{
 
@@ -20,10 +36,19 @@ class Comprador {
         }
     }
 
+    /** metodo
+     *
+     * @return vuelto
+     */
+
     public int Vuelto() {
         return vuelto;
     }
 
+    /** metodo
+     *
+     * @return sabor
+     */
     public String ComisteBebiste() {
         return sabor;
     }
