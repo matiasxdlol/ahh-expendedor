@@ -7,15 +7,15 @@ class Deposito<T> {
         al = new ArrayList<T>();
     }
 
-    public void addBebida(Bebida b) {
-        al.add(b);
+    public void addProducto(T producto) {
+        al.add(producto);
     }
 
-    public Bebida getBebida() {
+    public T getProducto() {
 
         if (al.size() == 0) return null;
 
-        Bebida b = al.remove(0);
+        T b = al.remove(0);
         return b;
     }
 }
@@ -26,15 +26,15 @@ class DepositoV<T> {
         mon = new ArrayList<T>();
     }
 
-    public void addMoneda(T Moneda) {
-        mon.add(b);
+    public void addMoneda(T moneda) {
+        mon.add(moneda);
     }
 
     public T getMoneda() {
         if (mon.size() == 0) return null;
 
-        Moneda b = mon.remove(0);
-        return b;
+        T moneda = mon.remove(0);
+        return moneda;
     }
 }
 

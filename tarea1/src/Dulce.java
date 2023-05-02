@@ -1,36 +1,29 @@
-abstract class Dulce {
-
-    private int serie;
+abstract class Dulce extends Producto{
 
     public Dulce(int serie) {
-        this.serie = serie;
+        super(serie);
     }
 
-    public int getSerie() {
-        return serie;
-    }
 
-    public abstract String comer();
 }
-
-class Snicker extends Dulce {
-    public Snicker(int s) {
-
-        super(s);
+class Snicker extends Dulce{
+    public Snicker(int serie)
+    {
+        super(serie);
     }
 
-    public String comer() {
+    public String getnombre() {
         return "snicker";
     }
 }
-
 class Super8 extends Dulce {
-    public Super8(int s) {
-
-        super(s);
+    public Super8(int serie)
+    {
+        super(serie);
     }
 
-    public String comer() {
+    public String getnombre() {
+
         return "super8";
     }
 }

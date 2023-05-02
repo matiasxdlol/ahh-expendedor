@@ -9,8 +9,6 @@ abstract class Producto {
         return serie;
     }
 
-    public abstract String GetBeber();
-
-    public abstract String GetComer();
+    public abstract String getnombre();
 
 }

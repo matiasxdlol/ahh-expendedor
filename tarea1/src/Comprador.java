@@ -1,13 +1,14 @@
 class Comprador {
-    private String sonido;
+    private String sabor;
+    private int exp;
     private int vuelto;
 
-    public Comprador(Moneda m, int cualBebida, Expendedor exp) {
+    public Comprador(Moneda m, int cualBebida, Expendedor exp) throws PagoInsuficienteException, NoHayProductoExcption{
 
-        Bebida a = exp.comprarBebida(m, cualBebida);
+        Producto a = exp.comprarBebida(m, cualBebida);
 
-        if (a == null) sonido = null;
-        else sonido = a.beber();
+        if (a == null) sabor = null;
+        else sabor = a.getnombre();
 
         boolean b = true;
         while (b) {
@@ -19,11 +20,11 @@ class Comprador {
         }
     }
 
-    public int cuantoVuelto() {
+    public int Vuelto() {
         return vuelto;
     }
 
-    public String queBebiste() {
-        return sonido;
+    public String ComisteBebiste() {
+        return sabor;
     }
 }

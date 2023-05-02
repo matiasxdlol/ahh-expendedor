@@ -1,37 +1,28 @@
-abstract class Bebida {
-
-    /**
-     * test !!!!
-     */
-    private int serie;
+abstract class Bebida extends Producto{
 
     public Bebida(int serie) {
-        this.serie = serie;
+        super(serie);
     }
 
-    public int getSerie() {
-        return serie;
-    }
 
-    public abstract String beber();
 }
 class CocaCola extends Bebida {
-    public CocaCola(int s)
+    public CocaCola(int serie)
     {
-        super(s);
+        super(serie);
     }
 
-    public String beber() {
+    public String getnombre() {
         return "cocacola";
     }
 }
 class Sprite extends Bebida  {
-    public Sprite(int s)
+    public Sprite(int serie)
     {
-        super(s);
+        super(serie);
     }
 
-    public String beber() {
+    public String getnombre() {
 
         return "sprite";
     }
