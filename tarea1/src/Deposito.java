@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
-class Deposito {
-    private ArrayList<Bebida> al;
+class Deposito<T> {
+    private ArrayList<T> al;
 
     public Deposito() {
-        al = new ArrayList<>();
+        al = new ArrayList<T>();
     }
 
     public void addBebida(Bebida b) {
@@ -19,18 +19,18 @@ class Deposito {
         return b;
     }
 }
-class DepositoV {
-    private ArrayList<Moneda> mon;
+class DepositoV<T> {
+    private ArrayList<T> mon;
 
     public DepositoV() {
-        mon = new ArrayList();
+        mon = new ArrayList<T>();
     }
 
-    public void addMoneda(Moneda b) {
+    public void addMoneda(T Moneda) {
         mon.add(b);
     }
 
-    public Moneda getMoneda() {
+    public T getMoneda() {
         if (mon.size() == 0) return null;
 
         Moneda b = mon.remove(0);
