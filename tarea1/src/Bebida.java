@@ -1,6 +1,6 @@
 
 /**
-superclase abstracta para CocaCola y Sprite
+superclase abstracta para CocaCola y Sprite y subclase de Producto
  */
 abstract class Bebida extends Producto{
 
