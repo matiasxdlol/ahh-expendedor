@@ -1,5 +1,5 @@
 /**
- * clase
+ * clase para el comprador del producto
  */
 class Comprador {
 
@@ -9,7 +9,7 @@ class Comprador {
 
     private int vuelto;
 
-    /** exepción
+    /** exepción para pago insuficiente y en caso de que no haya producto
      *
      *
      * @param m
@@ -36,7 +36,7 @@ class Comprador {
         }
     }
 
-    /** metodo
+    /** metodo que retorna vuelto
      *
      * @return vuelto
      */
@@ -45,7 +45,7 @@ class Comprador {
         return vuelto;
     }
 
-    /** metodo
+    /** metodo qye retorna el sabor del producto
      *
      * @return sabor
      */
