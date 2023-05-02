@@ -5,7 +5,12 @@ abstract class Producto {
         this.serie=serie;
     }
 
-    public int GetSerie(){
+    public int getSerie(){
         return serie;
     }
+
+    public abstract String GetBeber();
+
+    public abstract String GetComer();
+
 }
