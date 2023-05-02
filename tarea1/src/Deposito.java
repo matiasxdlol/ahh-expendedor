@@ -19,10 +19,10 @@ class Deposito {
         return b;
     }
 }
-class DepositoM {
+class DepositoV {
     private ArrayList<Moneda> mon;
 
-    public DepositoM() {
+    public DepositoV() {
         mon = new ArrayList();
     }
 

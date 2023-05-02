@@ -15,6 +15,7 @@ class Comprador {
             Moneda s = exp.getVuelto();
             if (s != null) vuelto += s.getValor();
             else b = false;
+
         }
     }
 

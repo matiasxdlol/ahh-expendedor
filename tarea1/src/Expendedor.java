@@ -1,7 +1,7 @@
 class Expendedor {
     private Deposito coca;
     private Deposito sprite;
-    private DepositoM monVu;
+    private DepositoV monVu;
     private int precio;
     public static final int COCA = 1;
     public static final int SPRITE = 2;
@@ -9,7 +9,7 @@ class Expendedor {
     public Expendedor(int numBebidas, int precioBebidas) {
         coca = new Deposito();
         sprite = new Deposito();
-        monVu = new DepositoM();
+        monVu = new DepositoV();
         precio = precioBebidas;
 
         for (int i = 0; i < numBebidas; i++) {

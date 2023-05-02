@@ -8,6 +8,4 @@ abstract class Moneda {
 
     public abstract int getValor();
 
-
-
 }

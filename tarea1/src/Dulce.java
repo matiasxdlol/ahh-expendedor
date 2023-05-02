@@ -15,6 +15,7 @@ abstract class Dulce {
 
 class Snicker extends Dulce {
     public Snicker(int s) {
+
         super(s);
     }
 
@@ -25,6 +26,7 @@ class Snicker extends Dulce {
 
 class Super8 extends Dulce {
     public Super8(int s) {
+
         super(s);
     }
 
