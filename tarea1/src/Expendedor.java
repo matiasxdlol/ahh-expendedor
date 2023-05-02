@@ -1,3 +1,7 @@
+/** clase del expendedor
+ *
+ */
+
 class Expendedor {
     private Deposito coca;
     private Deposito sprite;
@@ -9,6 +13,12 @@ class Expendedor {
     public static final int SPRITE = 2;
     public static final int SNICKER = 3;
     public static final int SUPER8 = 4;
+
+    /**
+     *  constructor del expendedor
+     * @param numProducto
+     * @param precioProducto
+     */
 
 
     public Expendedor(int numProducto, int precioProducto) {
@@ -30,6 +40,15 @@ class Expendedor {
             super8.addProducto(s8);
         }
     }
+
+    /**
+     * Exepción para cuando no hay producto o el pago es insuficiente
+     * @param m
+     * @param n
+     * @return
+     * @throws NoHayProductoExcption
+     * @throws PagoInsuficienteException
+     */
 
 
     public Producto comprarBebida(Moneda m, int n)throws NoHayProductoExcption, PagoInsuficienteException {
@@ -102,9 +121,17 @@ class Expendedor {
         return null;
     }
 
+    /** metodo para obtener el precio con un getter
+     *
+     * @return precio
+     */
     public int getPrecio() {
         return precio;
     }
+
+    /** metodo para obtener el vuelto en monedas
+     *
+     */
 
     public Moneda getVuelto() {
         return (Moneda) monVu.getMoneda();
